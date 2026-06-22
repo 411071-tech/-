@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>管理單字</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>管理單字</h1>
+      <nav>
+        <a href="index.html">回到練習</a>
+      </nav>
+    </header>
+
+    <form id="word-form">
+      <div>
+        <label>英文單字<br><input id="word" required></label>
+      </div>
+      <div>
+        <label>翻譯<br><input id="translation"></label>
+      </div>
+      <div>
+        <label>詞性<br><input id="pos"></label>
+      </div>
+      <div>
+        <label>例句<br><textarea id="example" rows="2"></textarea></label>
+      </div>
+      <div>
+        <label>字根分析<br><textarea id="root" rows="2"></textarea></label>
+      </div>
+      <div style="margin-top:8px;display:flex;gap:8px">
+        <button type="button" id="auto-fill">自動填入</button>
+        <button type="submit" id="save">存檔</button>
+        <button type="button" id="clear">清空</button>
+      </div>
+    </form>
+
+    <section id="list" style="margin-top:18px"></section>
+  </main>
+
+  <script src="manage.js"></script>
+</body>
+</html>

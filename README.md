@@ -1,3 +1,15 @@
+# Vocab Trainer (純前端)
+
+簡單的純前端背單字工具，包含練習頁（index.html）與管理頁（manage.html）。
+
+使用方式：
+
+- 開啟 `index.html` 開始背單字。
+- 開啟 `manage.html` 新增、編輯或刪除單字。管理頁有「自動填入」按鈕，會呼叫 Dictionary API 與 LibreTranslate 嘗試補全資料。
+
+資料會儲存在瀏覽器的 `localStorage`（鍵名 `vocab_trainer_words`）。
+
+注意：自動填入需要網路，且第三方 API 可能有使用限制或 CORS 限制。
 # 簡易背單字工具
 
 這是一個簡單的 Python 單字背誦工具，支援：
